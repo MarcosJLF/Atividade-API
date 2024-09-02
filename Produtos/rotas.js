@@ -4,7 +4,7 @@ import express from 'express'
 const router = express.Router()
 
 
-router.get('/', controlador.getlist)
+router.get('', controlador.getlist)
 
 router.get('/id/:',controlador.getId)
 
