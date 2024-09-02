@@ -6,7 +6,7 @@ const app = express()
 
 app.use(bodyParser.json())
 
-app.use('/db',router)
+app.use('/produto',router)
 
 
 const porta = 8080

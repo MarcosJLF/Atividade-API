@@ -4,9 +4,12 @@ import express from 'express'
 const router = express.Router()
 
 
-router.get('/', controlador.hello)
+router.get('/', controlador.getlist)
 
-router.post('/write', controlador.write)
+router.get('/id/:',controlador.getId)
 
+router.post('/write', controlador.writeProdutos)
+
+router.get('/delete/:', controlador.deleteProduto)
 
 export default router

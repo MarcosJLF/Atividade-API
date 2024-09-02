@@ -1,0 +1,44 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "moletom",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "carro",
+      "descricao": "quatro rodas",
+      "preco": 300,
+      "categoria_id": 20,
+      "imagem": "carro.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "moto",
+      "descricao": "duas rodas",
+      "preco": 30,
+      "categoria_id": 20,
+      "imagem": "moto.jpg"
+    },
+    {
+      "id": 20,
+      "nome": "moto",
+      "descricao": "duas rodas",
+      "preco": 30,
+      "categoria_id": 20,
+      "imagem": "moto.jpg"
+    },
+    {
+      "id": 22,
+      "nome": "moto",
+      "descricao": "duas rodas",
+      "preco": 30,
+      "categoria_id": 20,
+      "imagem": "moto.jpg"
+    }
+  ]
+}
