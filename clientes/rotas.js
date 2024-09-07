@@ -4,13 +4,14 @@ import express from 'express'
 const routter = express.Router()
 
 
-routter.get('', controlador.getlogin)
+routter.get('', controlador.getlist)
 
-routter.post('/email', controlador.getEmail)
+routter.get('/id/', controlador.getId)
 
-routter.post('/new', controlador.writeCliente)
+routter.post('/write', controlador.writeCliente)
 
-routter.get('/delete/:', controlador.deleteCliente)
+routter.get('/delete/', controlador.deleteCliente)
 
+routter.post('/update/', controlador.updateCliente)
 
 export default routter

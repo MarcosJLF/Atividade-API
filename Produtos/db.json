@@ -1,1 +1,30 @@
-{"produtos":[{"id":1,"nome":"moletom","descricao":"Camiseta de algodão","preco":30,"categoria_id":2,"imagem":"camiseta.jpg"},{"id":10,"nome":"moletom","descricao":"Camiseta de algodão","preco":30,"categoria_id":2,"imagem":"camiseta.jpg"},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]}
+{
+  "produtos": [
+    {
+      "id": 5,
+      "nome": "moletom updated",
+      "descricao": "Camiseta de algodão updated",
+      "preco": 35,
+      "categoria_id": 2,
+      "imagem": "camiseta_updated.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Marcosss",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    }
+  ]
+}

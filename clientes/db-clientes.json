@@ -1,0 +1,58 @@
+{
+  "clientes": [
+    {
+      "id": 2,
+      "nome": "Marcos",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    },
+    {
+      "id": 201,
+      "nome": "Marcosss",
+      "Email": "marcos@gmail.com",
+      "senha": "123354678"
+    }
+  ]
+}
