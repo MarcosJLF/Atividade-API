@@ -115,7 +115,7 @@
       "imagem": "camiseta.jpg"
     },
     {
-      "id": 20,
+      "id": 3,
       "nome": "ferrari",
       "descricao": "Camiseta de algodão",
       "preco": 30,
@@ -123,10 +123,7 @@
       "imagem": "camiseta.jpg"
     },
     {
-      "id": 21
-    },
-    {
-      "id": 21,
+      "id": 3,
       "nome": "ferrari",
       "descricao": "Camiseta de algodão",
       "preco": 30,
@@ -134,10 +131,7 @@
       "imagem": "camiseta.jpg"
     },
     {
-      "id": 22
-    },
-    {
-      "id": 22,
+      "id": 3,
       "nome": "ferrari",
       "descricao": "Camiseta de algodão",
       "preco": 30,
@@ -145,10 +139,7 @@
       "imagem": "camiseta.jpg"
     },
     {
-      "id": 23
-    },
-    {
-      "id": 23,
+      "id": 3,
       "nome": "ferrari",
       "descricao": "Camiseta de algodão",
       "preco": 30,
@@ -156,10 +147,7 @@
       "imagem": "camiseta.jpg"
     },
     {
-      "id": 24
-    },
-    {
-      "id": 24,
+      "id": 3,
       "nome": "ferrari",
       "descricao": "Camiseta de algodão",
       "preco": 30,
@@ -167,7 +155,117 @@
       "imagem": "camiseta.jpg"
     },
     {
-      "id": 25
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "ferrari",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
     }
+
   ]
 }
