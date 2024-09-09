@@ -24,7 +24,7 @@ const writeCliente = async (req,res) => {
 
     const dados = req.body;
 
-    if (!dados) {
+    if (!dados.nome) {
       return res.status(400).json({ error: 'Dados do produto não fornecidos' });
     }
     

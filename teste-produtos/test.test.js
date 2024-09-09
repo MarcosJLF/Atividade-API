@@ -2,15 +2,30 @@ import {expect, test} from "vitest"
 import request  from "supertest"
 import app from "../index";
 
-test("GET produtos devem ser resgatado com sucesso", async () => {
+test("GET Todos produtos devem ser resgatado com sucesso", async () => {
     const res = await request(app).get("/produto");
     expect(res.status).toBe(200)
 })
 
-test("GET produtos devem ser pego por id", async () => {
+/// teste - erro // 
+
+test("GET Todos produtos devem ser resgatado com sucesso", async () => {
+    const res = await request(app).get("/");
+    expect(res.status).toBe(404)
+})
+
+test("GET produto deve ser pego por id", async () => {
     const res = await request(app).get("/produto/id/?id=22");
     expect(res.status).toBe(200);
 });
+
+       /// teste de erro ///
+
+test("GET produto deve ser pego por id", async () => {
+    const res = await request(app).get("/produto/id/?id=");
+    expect(res.status).toBe(404);
+});
+
 
 test("POST produto deve ser criado com sucesso", async () => {
     const novoProduto = {
@@ -24,23 +39,55 @@ test("POST produto deve ser criado com sucesso", async () => {
     expect(res.status).toBe(201); 
 });
 
+ //// teste de erro /// 
+
+test("POST produto deve ser criado com sucesso", async () => {
+    const novoProduto = {
+    }
+    const res = await request(app).post("/produto/write").send(novoProduto)
+    expect(res.status).toBe(201); 
+});
+
+
+
 test("GET deletar um produto", async () => {
-const res = await request(app).get(`/produto/delete/:?delete=${4} `);
+const res = await request(app).get(`/produto/delete/:?delete=${3} `);
     expect(res.status).toBe(200)
 })
 
+
+//// teste de erro /// 
+
+test("GET deletar um produto", async () => {
+    const res = await request(app).get(`/produto/delete/:?delete= `);
+        expect(res.status).toBe(400)
+    })
+
+
 test("Post produto deve ser atualizado com sucesso", async () => {
     const produtoToUpdate = {
-        id: 5,
+        id: 2,
         nome: "moletom updated",
         descricao: "Camiseta de algodão updated",
         preco: 35,
         categoria_id: 2,
         imagem: "camiseta_updated.jpg"
     }
-    const res = await request(app).post("/produto/update/?id=5").send(produtoToUpdate)
+    const res = await request(app).post("/produto/update/?id=2").send(produtoToUpdate)
     expect(res.status).toBe(200); 
 });
+
+
+///// teste - erro ///
+
+test("Post produto deve ser atualizado com sucesso", async () => {
+    const produtoToUpdate = {
+    }
+    const res = await request(app).post("/produto/update/?id=").send(produtoToUpdate)
+    expect(res.status).toBe(400); 
+});
+
+
 
 
 ////////////////  teste - clientes ///////////////////
@@ -52,9 +99,24 @@ test("GET cliente devem ser resgatado com sucesso", async () => {
     expect(res.status).toBe(200)
 })
 
+//// teste - erro /// 
+
+test("GET cliente devem ser resgatado com sucesso", async () => {
+    const res = await request(app).get("/");
+    expect(res.status).toBe(404)
+})
+
+
 test("GET cliente devem ser pego por id", async () => {
     const res = await request(app).get("/cliente/id/?id=201");
     expect(res.status).toBe(200);
+});
+
+/// teste - erro ///
+
+test("GET cliente devem ser pego por id", async () => {
+    const res = await request(app).get("/cliente/id/?id=");
+    expect(res.status).toBe(404);
 });
 
 test("POST cliente deve ser criado com sucesso", async () => {
@@ -68,10 +130,31 @@ test("POST cliente deve ser criado com sucesso", async () => {
     expect(res.status).toBe(201); 
 });
 
+//// teste - erro /// 
+
+test("POST cliente deve ser criado com sucesso", async () => {
+    const novoProduto = {
+      id: 201,
+      nome:"",
+      Email: "marcos@gmail.com",
+      senha: "123354678"
+    }
+    const res = await request(app).post("/cliente/write").send(novoProduto)
+    expect(res.status).toBe(400); 
+});
+
 test("GET deletar um cliente", async () => {
 const res = await request(app).get(`/cliente/delete/?delete=${201} `);
     expect(res.status).toBe(200)
 })
+
+//// teste - erro /// 
+
+test("GET deletar um cliente", async () => {
+    const res = await request(app).get(`/cliente/delete/?delete= `);
+        expect(res.status).toBe(400)
+    })
+    
 
 test("Post cliente deve ser atualizado com sucesso", async () => {
     const produtoToUpdate = {
@@ -82,4 +165,17 @@ test("Post cliente deve ser atualizado com sucesso", async () => {
       }
     const res = await request(app).post("/produto/update/?id=2").send(produtoToUpdate)
     expect(res.status).toBe(200); 
+});
+
+//// teste - erro ///
+
+test("Post cliente deve ser atualizado com sucesso", async () => {
+    const produtoToUpdate = {
+        id: null,
+        nome: "asd",
+        Email: "marcos@gmail.com",
+        senha: "123354678"
+      }
+    const res = await request(app).post("/produto/update/?id=10").send(produtoToUpdate)
+    expect(res.status).toBe(404); 
 });
