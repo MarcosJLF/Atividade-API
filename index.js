@@ -2,15 +2,19 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import router from './Produtos/rotas.js'
 import routter from './clientes/rotas.js'
+import rrouter from './login/rotas-login.js'
+import cookieParser from "cookie-parser"
 
 const app = express()
 
 app.use(bodyParser.json())
+app.use(cookieParser())
 
 app.use('/produto',router)
 
 app.use('/cliente',routter)
 
+app.use('/login', rrouter)
 
 const porta = 8080
 
