@@ -9,7 +9,7 @@ test("GET Todos produtos devem ser resgatado com sucesso", async () => {
 
 /// teste - erro // 
 
-test("GET Todos produtos devem ser resgatado com sucesso", async () => {
+test("GET (erro) Todos produtos devem ser resgatado com sucesso ", async () => {
     const res = await request(app).get("/");
     expect(res.status).toBe(404)
 })
@@ -21,7 +21,7 @@ test("GET produto deve ser pego por id", async () => {
 
        /// teste de erro ///
 
-test("GET produto deve ser pego por id", async () => {
+test("GET (erro) produto deve ser pego por id", async () => {
     const res = await request(app).get("/produto/id/?id=");
     expect(res.status).toBe(404);
 });
@@ -41,7 +41,7 @@ test("POST produto deve ser criado com sucesso", async () => {
 
  //// teste de erro /// 
 
-test("POST produto deve ser criado com sucesso", async () => {
+test("POST (erro) produto deve ser criado com sucesso", async () => {
     const novoProduto = {
     }
     const res = await request(app).post("/produto/write").send(novoProduto)
@@ -58,7 +58,7 @@ const res = await request(app).get(`/produto/delete/:?delete=${3} `);
 
 //// teste de erro /// 
 
-test("GET deletar um produto", async () => {
+test("GET (erro) deletar um produto", async () => {
     const res = await request(app).get(`/produto/delete/:?delete= `);
         expect(res.status).toBe(400)
     })
@@ -80,7 +80,7 @@ test("Post produto deve ser atualizado com sucesso", async () => {
 
 ///// teste - erro ///
 
-test("Post produto deve ser atualizado com sucesso", async () => {
+test("Post (erro) produto deve ser atualizado com sucesso", async () => {
     const produtoToUpdate = {
     }
     const res = await request(app).post("/produto/update/?id=").send(produtoToUpdate)
@@ -101,7 +101,7 @@ test("GET cliente devem ser resgatado com sucesso", async () => {
 
 //// teste - erro /// 
 
-test("GET cliente devem ser resgatado com sucesso", async () => {
+test("GET (erro) cliente devem ser resgatado com sucesso", async () => {
     const res = await request(app).get("/");
     expect(res.status).toBe(404)
 })
@@ -114,7 +114,7 @@ test("GET cliente devem ser pego por id", async () => {
 
 /// teste - erro ///
 
-test("GET cliente devem ser pego por id", async () => {
+test("GET (erro) cliente devem ser pego por id", async () => {
     const res = await request(app).get("/cliente/id/?id=");
     expect(res.status).toBe(404);
 });
@@ -132,7 +132,7 @@ test("POST cliente deve ser criado com sucesso", async () => {
 
 //// teste - erro /// 
 
-test("POST cliente deve ser criado com sucesso", async () => {
+test("POST (erro) cliente deve ser criado com sucesso", async () => {
     const novoProduto = {
       id: 201,
       nome:"",
@@ -150,7 +150,7 @@ const res = await request(app).get(`/cliente/delete/?delete=${201} `);
 
 //// teste - erro /// 
 
-test("GET deletar um cliente", async () => {
+test("GET (erro) deletar um cliente", async () => {
     const res = await request(app).get(`/cliente/delete/?delete= `);
         expect(res.status).toBe(400)
     })
@@ -169,7 +169,7 @@ test("Post cliente deve ser atualizado com sucesso", async () => {
 
 //// teste - erro ///
 
-test("Post cliente deve ser atualizado com sucesso", async () => {
+test("Post (erro) cliente deve ser atualizado com sucesso", async () => {
     const produtoToUpdate = {
         id: null,
         nome: "asd",
